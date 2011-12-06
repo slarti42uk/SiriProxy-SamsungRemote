@@ -1,6 +1,6 @@
-# require 'socket'
-# require 'base64'
-# 
+require 'socket'
+require 'base64'
+ 
 class SiriProxy::Plugin::SamsungRemote < SiriProxy::Plugin
   attr_accessor :host
 
