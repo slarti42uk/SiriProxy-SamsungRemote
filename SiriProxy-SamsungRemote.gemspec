@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{SiriProxy-SamsungRemote}
+  s.name = "SiriProxy-SamsungRemote"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Steve Kingsley}]
-  s.date = %q{2011-12-06}
-  s.description = %q{Bringing together the work of plamoni on the SiriProxy and pjnewman's iPhone Protocol Decoded (SamyGo forum), this plugin is intended to allow the use of Siri to control my Samsung LE40C650 and hopefully other Samsung smart TV's}
-  s.email = %q{steve@codebed.com}
+  s.authors = ["Steve Kingsley"]
+  s.date = "2011-12-06"
+  s.description = "Bringing together the work of plamoni on the SiriProxy and pjnewman's iPhone Protocol Decoded (SamyGo forum), this plugin is intended to allow the use of Siri to control my Samsung LE40C650 and hopefully other Samsung smart TV's"
+  s.email = "steve@codebed.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -19,19 +19,21 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "SiriProxy-SamsungRemote.gemspec",
     "VERSION",
     "lib/SiriProxy-SamsungRemote.rb",
     "test/helper.rb",
     "test/test_SiriProxy-SamsungRemote.rb"
   ]
-  s.homepage = %q{http://github.com/slarti42uk/SiriProxy-SamsungRemote}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.8}
-  s.summary = %q{Port of the Perl version of the Samsung iPhone Protocol wrapped as a SiriProxy plugin}
+  s.homepage = "http://github.com/slarti42uk/SiriProxy-SamsungRemote"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.12"
+  s.summary = "Port of the Perl version of the Samsung iPhone Protocol wrapped as a SiriProxy plugin"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
