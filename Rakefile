@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "SiriProxy-SamsungRemote"
   gem.homepage = "http://github.com/slarti42uk/SiriProxy-SamsungRemote"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "steve.k@kissmarketing.co.uk"
+  gem.summary = %Q{Port of the Perl version of the Samsung iPhone Protocol wrapped as a SiriProxy plugin}
+  gem.description = %Q{Bringing together the work of plamoni on the SiriProxy and pjnewman's iPhone Protocol Decoded (SamyGo forum), this plugin is intended to allow the use of Siri to control my Samsung LE40C650 and hopefully other Samsung smart TV's}
+  gem.email = "steve@codebed.com"
   gem.authors = ["Steve Kingsley"]
   # dependencies defined in Gemfile
 end
