@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "SiriProxy-SamsungRemote"
+  gem.name = "siriproxy-samsungremote"
   gem.homepage = "http://github.com/slarti42uk/SiriProxy-SamsungRemote"
   gem.license = "MIT"
   gem.summary = %Q{Port of the Perl version of the Samsung iPhone Protocol wrapped as a SiriProxy plugin}
