@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "SiriProxy-SamsungRemote.gemspec",
     "VERSION",
-    "lib/SiriProxy-SamsungRemote.rb",
+    "lib/siriproxy-samsungremote.rb",
     "test/helper.rb",
     "test/test_SiriProxy-SamsungRemote.rb"
   ]
