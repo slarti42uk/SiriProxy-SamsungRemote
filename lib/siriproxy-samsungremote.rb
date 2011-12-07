@@ -35,7 +35,7 @@ class SiriProxy::Plugin::SamsungRemote < SiriProxy::Plugin
   
   listen_for(/test command/i) do 
     say "About to test"
-    send_command "MUTE"
+    send_command "VOLUP"
     say "Command sent"
     request_completed #always complete your request! Otherwise the phone will "spin" at the user!
     
@@ -46,35 +46,26 @@ class SiriProxy::Plugin::SamsungRemote < SiriProxy::Plugin
 
     ipencoded = Base64.encode64(self.myip)
   	macencoded = Base64.encode64(self.mymac)
-  	puts ipencoded
-  	puts macencoded
 
     messagepart1 = 0x64.chr + 0x00.chr + ipencoded.length.chr + 0x00.chr + ipencoded + macencoded.length.chr + 0x00.chr + macencoded + Base64.encode64(@@remotename).length.chr + 0x00.chr + Base64.encode64(@@remotename)
-    puts messagepart1
     part1 = 0x00.chr + @@appstring.length.chr + 0x00.chr + @@appstring + messagepart1.length.chr + 0x00.chr + messagepart1
-    puts part1
-    s.send(part1, part1.length)
+
+    s.send(part1, 0)
     
     messagepart2 = 0xc8.chr + 0x00.chr
-    puts messagepart2
     part2 = 0x00.chr + @@appstring.length.chr + 0x00.chr + @@appstring + messagepart2.length.chr + 0x00.chr + messagepart2
-    puts part2
     
-    s.send(part2, part2.length)
+    s.send(part2, 0)
     
     #Send remote key
-    # key = "KEY_" + command;
-    # puts key
-    # say "Sending #{command}"
-    # messagepart3 = 00.chr + 00.chr + 00.chr + Base64.encode64(key).length.chr + 00.chr + Base64.encode64(key)
-    # part3 = 00.chr + @@tvappstring.length.chr + 00.chr + @@tvappstring + messagepart3.length.chr + 00.chr + messagepart3
-    # s.puts(part3, part3.length)
-    # puts part3
+    key = "KEY_" + command
+    say "Sending #{command}"
+    messagepart3 = 0x00.chr + 0x00.chr + 0x00.chr + Base64.encode64(key).length.chr + 0x00.chr + Base64.encode64(key)
+    part3 = 0x00.chr + @@tvappstring.length.chr + 0x00.chr + @@tvappstring + messagepart3.length.chr + 0x00.chr + messagepart3
 
+    s.send(part3, 0)
 
-    # s.close               # Close the socket when done
+    s.close               # Close the socket when done
   end
   
-  
-
 end
