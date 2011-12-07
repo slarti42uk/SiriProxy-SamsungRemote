@@ -1,6 +1,10 @@
 = SiriProxy-SamsungRemote
 
-Description goes here.
+Okay so this is a mushup of two projects. First the SiriProxy and plugins. Full credit to plamoni (Pete) [https://github.com/plamoni].
+When I found this the other night I though how great it would be to use it for my TV remote so I went in search of details on the iPhone app  that Samsung released.
+I found that it's been decoded and a Perl script published at [http://forum.samygo.tv/viewtopic.php?f=12&t=1792] by pjnewman. Also fantastic work, full credit goes to him.
+
+So I decided to re-write it in Ruby and use it as a plugin to SiriProxy. So here it is... well here it comes!
 
 == Contributing to SiriProxy-SamsungRemote
  
