@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steve Kingsley"]
-  s.date = "2011-12-06"
+  s.date = "2011-12-07"
   s.description = "Bringing together the work of plamoni on the SiriProxy and pjnewman's iPhone Protocol Decoded (SamyGo forum), this plugin is intended to allow the use of Siri to control my Samsung LE40C650 and hopefully other Samsung smart TV's"
   s.email = "steve@codebed.com"
   s.extra_rdoc_files = [
